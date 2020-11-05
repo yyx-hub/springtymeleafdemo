@@ -1,0 +1,19 @@
+<!doctype html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>首页</title>
+</head>
+<body>
+
+    <h1 th:text="${a1}"></h1>
+    <input th:value="${a1}"><br/>
+
+    长度：<em th:size="${a1}"></em><br/>
+
+    拼接1：<span th:text="${a1}+${a2}"></span><br/>
+    拼接2：<span th:text="|${a1}${a2}|"></span>
+
+</body>
+</html>
